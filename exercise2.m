@@ -1,7 +1,7 @@
 pkg load image
-a = imread('C:\Users\ralph\Octave\fruits.jpg');
+a = imread('C:\Users\ralph\Octave\fruits.png');
 whos a
-imfinfo 'fruits.jpg' #data type of a = uint8
+imfinfo 'fruits.png' #data type of a = uint8
 figure(1):imshow(a);
 b = imresize(a, 0.50);
 imwrite(b, 'C:\Users\ralph\Octave\fruits2.png')
